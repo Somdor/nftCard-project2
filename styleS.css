@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* body part  */
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color:  hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* end of body Part */
+/* start main div */
+.main{
+    padding: 1rem;
+    width:20rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+/* end main div */
+/* start card div */
+.card{
+    overflow:auto ;
+    position: relative;
+}
+.card img{
+    height:100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.overlay{
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; 
+    background-color:hsla(178, 100%, 50%,0.3) ; 
+    display: none; 
+    border-radius: 15px;
+}
+.overlay img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.card:hover .overlay{
+    display: block;
+}
+/* end card div */
+/* Start  text div */
+.text{
+    padding: 20px 0;
+    
+}
+.text a{
+    padding-bottom:1rem  ;
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+    text-decoration:none;
+    font-weight: 600;
+    display: inline block;
+    /* padding: 20px 0; */
+}
+.text a:hover{
+    color: hsl(178, 100%, 50%);
+}
+.text p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    text-align: left;
+    padding-top:1rem;
+}
+/* start icone */
+.lastLine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem ;
+}
+.lastLine img{
+       height:15px;
+       width: 13px;
+}
+.lastLine p{
+    font-size: 15px;
+}
+.img1,.img2{
+    display: flex;
+    align-items: center;
+}
+.img1 p{
+    color: hsl(178, 100%, 50%);
+    padding-left:7px ;
+    font-weight: 600;
+}
+.img2 p{
+    color:  hsl(215, 51%, 70%);
+    padding-left: 7px;
+}
+/* end icone seectin */
+/* line */
+hr{
+    border-color:hsl(215, 51%, 70%);
+    margin: 0.4rem 0.5rem;
+}
+/* start footer */
+.footer{
+    display: flex;
+    align-items: center;
+    
+    margin: 1rem 0;
+}
+.footer img{
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+.footer p a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+.footer p{
+    color:  hsl(215, 51%, 70%);
+    padding-left: 7px;
+    font-size: 18px;
+}
+.footer a:hover{
+  color:hsl(178, 100%, 50%);
+}
+/* end footer */
